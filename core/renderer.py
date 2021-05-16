@@ -8,6 +8,7 @@ class Renderer(object):
         glEnable(GL_DEPTH_TEST)
         glClearColor(clearColor[0], clearColor[1], clearColor[2], 1.0)
 
+
     def render(self, scene, camera):
 
         # clear buffers

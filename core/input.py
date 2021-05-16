@@ -38,6 +38,9 @@ class Input(object):
                 keyName = pygame.key.name(event.key)
                 self.keyPressedList.remove(keyName)
                 self.keyUpList.append(keyName)
+            if self.isKeyPressed("escape"):
+                self.quit = True
+
 
     # function to query key states
     def isKeyDown(self, keyName):

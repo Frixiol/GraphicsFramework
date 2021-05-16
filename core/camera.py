@@ -4,7 +4,7 @@ from numpy.linalg import inv
 
 class Camera(Object3D):
 
-    def __init__(self, angleOfView=60, aspectRatio=1, near=0.1, far=100):
+    def __init__(self, angleOfView=90, aspectRatio=1080/720, near=0.1, far=1000):
         super().__init__()
         self.projectionMatrix = Matrix.makePersepctive(angleOfView,
                                              aspectRatio, near, far)

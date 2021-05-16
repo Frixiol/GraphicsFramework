@@ -57,7 +57,7 @@ class Matrix(object):
         d = 1.0 / tan(a/2)
         r = aspectRatio
         b = (far + near) / (near - far)
-        c = 2 * far * near / (near - far)
+        c = (2 * far * near) / (near - far)
         return numpy.array([[d/r, 0,  0, 0],
                             [  0, d,  0, 0],
                             [  0, 0,  b, c],

@@ -9,7 +9,7 @@ class LineBasicMaterial(BasicMaterial):
         # render vertices as continuous by default
         self.settings["drawStyle"] = GL_LINE_STRIP
         # line type: "connected" | "loop" | "segments"
-        self.settings["lineType"] = "connected"
+        self.settings["lineType"] = "loop"
         # line thickness
         self.settings["lineWidth"] = 4
 

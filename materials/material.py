@@ -1,5 +1,6 @@
 from core.openGLUtils import OpenGLUtils
 from core.uniform import Uniform
+from OpenGL.GL import *
 
 class Material(object):
 
@@ -17,7 +18,10 @@ class Material(object):
 
         # store OpenGL render settings
         self.settings = {}
-        self.settings["drawStyle"] = None
+        self.settings["drawStyle"] = GL_TRIANGLES
+
+    def addUniform(self, dataType, variableName, data):
+        self.uniforms[variableName] = Uniform(dataType, data)
 
     # initialize all Uniform variable references
     def locateUniforms(self):

@@ -10,11 +10,11 @@ class SurfaceBasicMaterial(BasicMaterial):
         # render vertices as triangles
         self.settings["drawStyle"] = GL_TRIANGLES
         # render both side?
-        self.settings["doubleSide"] = True
+        self.settings["doubleSide"] = False
         # render as wireframe?
         self.settings["wireframe"] = False
         # line thickness
-        self.settings["lineWidth"] = 4
+        self.settings["lineWidth"] = 1
 
         self.setProperties(properties)
 
